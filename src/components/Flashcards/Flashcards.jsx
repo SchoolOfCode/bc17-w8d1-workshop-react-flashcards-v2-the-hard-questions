@@ -4,7 +4,7 @@ import Flashcard from "../Flashcard/Flashcard";
 
 export default function Flashcards() {
   return (
-    <section className="flashcards">
+    <section className={styles.flashcards}>
       <Flashcard />
       <Flashcard />
       <Flashcard />
