@@ -5,6 +5,7 @@ import './App.css'
 import Header from './components/Header/Header'
 import Form from './components/Form/Form'
 import Flashcards from './components/Flashcards/Flashcards'
+import Footer from './components/Footer/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,7 +16,7 @@ function App() {
         <Header /> 
         <Form />
         <Flashcards />
-        <Flashcards/>
+        <Footer />
       </div>
     </>
   )
