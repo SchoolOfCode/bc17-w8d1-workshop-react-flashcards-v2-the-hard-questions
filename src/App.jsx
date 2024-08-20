@@ -27,7 +27,7 @@ function App() {
     <>
       <div className = "wrapper">
         <Header /> 
-        <Form />
+        <Form data ={flashcards} setCard={setFlashcards}/>
         <Flashcards data ={flashcards}/> 
         <Footer />
       </div>

@@ -4,16 +4,11 @@ import Flashcard from "../Flashcard/Flashcard";
 
 export default function Flashcards({data}) {
   return (
-    
-    <section className={styles.flashcards}>
-     for (let i=0;i<data.length;i++){
-      <>
-      <Flashcard />
-      <Flashcard />
-      <Flashcard />
-      </>
-     }
-    
-    </section>
+    <>
+      <section className={styles.flashcards}>
+      {data.map((flashcard) => { 
+        return <Flashcard question={flashcard.question} answer={flashcard.answer}/>})}
+      </section>
+    </>
   )
 }

@@ -1,7 +1,13 @@
 import React from "react";
 import styles from './Form.module.css';
 
-export default function Form() {
+export default function Form({ data, setCard }) {
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    
+  }
+
   return(
     <form>
       <label for="question">Question:</label>
